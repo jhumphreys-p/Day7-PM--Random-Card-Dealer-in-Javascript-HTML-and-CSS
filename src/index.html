@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Cartas</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
@@ -12,18 +12,49 @@
     />
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
-  <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
-      </div>
+  <body class="container-fluid" id="body">
+    <form
+      class="row d-flex flex-row align-items-center justify-content-center"
+      id="form"
+    >
+      <input
+        type="text"
+        class="col-1 form-control"
+        id="inputForCards"
+        placeholder="# CARTAS"
+      />
+      <button class="col-1 btn ml-2 draw" id="draw" type="submit">
+        <img
+          class="myImg"
+          src="https://static.wikia.nocookie.net/dragonball/images/3/35/Esfera_del_dragon_4_estrellas.png/revision/latest?cb=20140105064853&path-prefix=es"
+        />
+        EMPEZAR
+      </button>
+      <button class="col-1 btn ml-2 bubbleSort" id="bubbleSort" type="submit">
+        <img
+          class="myImg"
+          src="https://static.wikia.nocookie.net/dragonball/images/3/35/Esfera_del_dragon_4_estrellas.png/revision/latest?cb=20140105064853&path-prefix=es"
+        />
+        REPETIR
+      </button>
+      <button class="col-1 btn ml-2 selectSort" id="selectSort" type="submit">
+        <img
+          class="myImg"
+          src="https://static.wikia.nocookie.net/dragonball/images/3/35/Esfera_del_dragon_4_estrellas.png/revision/latest?cb=20140105064853&path-prefix=es"
+        />
+        ORDENAR
+      </button>
+    </form>
+    <section
+      class="row d-flex flex-row align-items-center justify-content-center"
+      id="unorderedCard"
+    ></section>
+    <div class="row d-flex flex-row align-items-center justify-content-center">
+      <p class="paragraph">SORTING:</p>
     </div>
+    <article
+      class="row d-flex flex-column justify-content-center"
+      id="sortCards"
+    ></article>
   </body>
 </html>
